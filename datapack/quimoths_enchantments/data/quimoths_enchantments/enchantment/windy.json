@@ -1,0 +1,47 @@
+{
+	"description": "Windy",
+	"supported_items": "minecraft:wind_charge",
+	"primary_items": "minecraft:wind_charge",
+	"weight": 1,
+	"max_level": 1,
+	"min_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"max_cost": {
+		"base": 0,
+		"per_level_above_first": 0
+	},
+	"anvil_cost": 0,
+	"slots": [
+		"hand"
+	],
+	"effects": {
+		"minecraft:post_attack": [
+			{
+				"enchanted": "attacker",
+				"affected": "victim",
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "quimoths_enchantments:test"
+				}
+			}
+		],
+		"minecraft:projectile_spawned": [
+			{
+				"effect": {
+					"type": "minecraft:summon_entity",
+					"entity": [
+						"minecraft:marker"
+					]
+				}
+			},
+			{				
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "quimoths_enchantments:test"
+				}
+			}
+		]
+	}
+}

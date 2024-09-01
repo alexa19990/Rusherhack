@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "Playground for custom enchantments",
+		"supported_formats": [
+			48,
+			50
+		]
+	}
+}
