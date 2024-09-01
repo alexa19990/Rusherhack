@@ -1,0 +1,2 @@
+# custom_enchantments
+Experimental minecraft enchantment definitions
